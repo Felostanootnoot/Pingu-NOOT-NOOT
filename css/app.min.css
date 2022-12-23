@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif
+}
+
+p {
+    font-size: 18px
+}
+
+.navbar {
+    box-shadow: none
+}
+
+.navbar .nav-item .nav-link {
+    color: #fff !important;
+    font-weight: bold;
+    margin: 0px 8px
+}
+
+.navbar .nav-item .nav-btn {
+    color: #5ccaec;
+    background: #fff;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px
+}
+
+.top-nav-collapse {
+    background-color: #5ccaec
+}
+
+@media(max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #5ccaec
+    }
+}
+
+@media(min-width: 800px)and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background-color: #5ccaec
+    }
+}
+
+.sec-heading {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 15px
+}
+
+.sec-heading .title {
+    color: #5ccaec;
+    font-size: 55px;
+    font-weight: 800
+}
+
+main #intro {
+    height: 110vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../images/bg.jpg") bottom center;
+    background-repeat: no-repeat;
+    background-size: cover
+}
+
+main #intro .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center
+}
+
+main #intro h1 {
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    font-size: 54px
+}
+
+main #intro h2 {
+    font-size: 32px;
+    color: rgb(255, 189, 89)
+}
+
+main #intro .container-button {
+    display: flex;
+    flex-direction: row
+}
+
+main #intro .container-button .btn {
+    color: #5ccaec;
+    background: #fff;
+    box-shadow: none;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+    margin: 0 15px
+}
+
+@media(max-width: 767px) {
+    main #intro .container-button {
+        flex-direction: column
+    }
+}
+
+main #intro img {
+    max-width: 25%
+}
+
+main #roadmap {
+    padding-top: 120px;
+    padding-bottom: 120px
+}
+
+main #roadmap .card {
+    border-radius: 10px;
+    background-color: #5ccaec
+}
+
+main #roadmap .card .card-body {
+    color: #fff !important
+}
+
+main #roadmap .card .card-body h3 {
+    font-weight: bold
+}
+
+main #roadmap .main-timeline {
+    position: relative
+}
+
+main #roadmap .main-timeline::after {
+    content: "";
+    position: absolute;
+    width: 6px;
+    background: #5ccaec;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+    border-radius: 5px
+}
+
+main #roadmap .timeline {
+    position: relative;
+    width: 50%
+}
+
+main #roadmap .timeline::after {
+    content: "";
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    right: -13px;
+    background-color: #001aff;
+    top: 15px;
+    border-radius: 50%;
+    z-index: 1
+}
+
+main #roadmap .left {
+    padding: 0px 40px 20px 0px;
+    left: 0
+}
+
+main #roadmap .right {
+    padding: 0px 0px 20px 40px;
+    left: 50%
+}
+
+main #roadmap .left::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    right: 30px;
+    border: medium solid #5ccaec;
+    border-width: 10px 0 10px 10px;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #5ccaec
+}
+
+main #roadmap .right::before {
+    content: " ";
+    position: absolute;
+    top: 18px;
+    z-index: 1;
+    left: 30px;
+    border: medium solid #5ccaec;
+    border-width: 10px 10px 10px 0;
+    border-color: rgba(0, 0, 0, 0) #5ccaec rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
+}
+
+main #roadmap .right::after {
+    left: -12px
+}
+
+@media screen and (max-width: 600px) {
+    main #roadmap .main-timeline::after {
+        left: 31px
+    }
+
+    main #roadmap .timeline {
+        width: 100%;
+        padding-left: 70px;
+        padding-right: 25px
+    }
+
+    main #roadmap .timeline::before {
+        left: 60px;
+        border: medium solid #5ccaec;
+        border-width: 10px 10px 10px 0;
+        border-color: rgba(0, 0, 0, 0) #5ccaec rgba(0, 0, 0, 0) rgba(0, 0, 0, 0)
+    }
+
+    main #roadmap .left::after,
+    main #roadmap .right::after {
+        left: 18px
+    }
+
+    main #roadmap .left::before {
+        right: auto
+    }
+
+    main #roadmap .right {
+        left: 0%
+    }
+}
+
+@media(max-width: 767px) {
+    #intro h1 {
+        font-size: 28px !important
+    }
+
+    #intro h2 {
+        font-size: 25px !important
+    }
+
+    #intro .main_logo {
+        display: flex;
+        margin: 0 auto;
+        max-width: 50%
+    }
+
+    #maketoearn img,
+    #about img,
+    #tokenomics img,
+    #exchanges img {
+        width: 100%
+    }
+
+    #roadmap .card {
+        height: auto !important
+    }
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    padding: 50px 0 50px 0
+}
+
+footer .icon-container {
+    width: 50px;
+    height: 50px;
+    padding: 15px;
+    background: #5ccaec;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+footer .icon-container i {
+    color: #fff;
+    font-size: 25px
+}
